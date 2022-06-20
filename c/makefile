@@ -13,7 +13,7 @@ CFLAGS = -g
 all : $(TARGET)
 
 $(OBJS) : %.c
-	$(CC) -c $< -o $@ $(IFLAGS) $(CFLAGS)
+	$(CC) -c $^ -o $@ $(IFLAGS) $(CFLAGS)
 
 $(TARGET):$(OBJS)
 	$(CC) -o $(TARGET) $(OBJS)
